@@ -298,6 +298,11 @@ transition: transform .4s;
     color: #6af491;
     cursor: pointer;
   }
+  .newsletter ::placeholder{
+    text-transform: bold;
+   
+    color: rgb(246, 254, 246);
+  }
 
   .about{
     width: 100%;
@@ -499,4 +504,62 @@ input {
   margin-right: 5px;
   margin-left: 10px;
 
+}
+.contact{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+
+.contact .image{
+  flex:1 1 35rem;
+
+}
+
+.contact .image img{
+  width:100%;
+  margin-top: 25%;
+  margin-left: 1%;
+}
+
+.contact form{
+  margin-top: 3%;
+  flex:1 1 50rem;
+  border:10px solid rgba(0, 0, 0, 0.6);
+  border-radius: 30px;
+  padding:2rem;
+}
+
+.contact form .inputBox{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .inputBox input,
+.contact form .box, 
+.contact form textarea{
+  width: 100%;
+  padding:1rem;
+  margin:.7rem 0;
+  font-size: 1.7rem;
+  border:2px solid rgba(0,0,0,.1);
+  border-radius: .5rem;
+  text-transform: none;
+  color:rgb(0, 0, 0);
+} 
+
+.contact form .inputBox input:focus,
+.contact form .box:focus, 
+.contact form textarea:focus{
+  border-color: var(--pink);
+}
+
+.contact form .inputBox input{
+  width:49%;
+}
+
+.contact form textarea{
+  height: 20rem;
+  resize: none;
 }
